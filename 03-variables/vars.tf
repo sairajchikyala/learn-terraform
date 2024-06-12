@@ -46,3 +46,9 @@ variable "env" {}
 output "env" {
   value = var.env
 }
+
+# *.auto.common.tfvars are the which files pick up automatically
+variable "common" {}
+output "common" {
+  value = "var.common"
+}
