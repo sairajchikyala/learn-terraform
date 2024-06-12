@@ -41,14 +41,8 @@ output "z_x" {
   value = "var.z_map["x"]"
 }
 
-variable "ami" {
-   default = "ami-031d574cddc5bb371"
-}
-
-variable "instance_type" {
-   default = "t3.small"
-}
-
-variable "security_groups" {
-   default = ["sg-08d863ad27d36e0b7"]
+# we acn give empty variables,but data can be sent from a file ,those files are called tfvars
+variable "env" {}
+output "env" {
+  value = var.env
 }
