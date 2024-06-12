@@ -38,7 +38,7 @@ output "y_1" {
   value = "var.y_list[1]"
 }
 output "z_x" {
-  value = "var.z_map["x"]"
+  value = var.z_map["x"]
 }
 
 # we acn give empty variables,but data can be sent from a file ,those files are called tfvars
