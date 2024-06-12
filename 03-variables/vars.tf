@@ -8,3 +8,9 @@ variable "x" {
 # declare variables without value
 
 variable "y" {}
+
+# print variables
+
+output "x" {
+  value = "var.x"
+}
