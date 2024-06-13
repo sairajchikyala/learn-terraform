@@ -1,7 +1,7 @@
 resource "aws_instance" "frontend" {
-  for_each      = var.instances_types
+  for_each      = var.instance_types
   ami           = var.ami
-  instance_type = each.value["instances_types"]
+  instance_type = each.value["instance_type"]
   vpc_security_group_ids = var.security_groups
   tags = {
     Name = each.key
