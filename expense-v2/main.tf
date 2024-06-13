@@ -1,5 +1,5 @@
-resource "aws_instance" "mysql" {
-  for_each = var.instances_types
+resource "aws_instance" "frontend" {
+  for_each      = var.instances_types
   ami           = var.ami
   instance_type = each.value["instances_types"]
   vpc_security_group_ids = var.security_groups
