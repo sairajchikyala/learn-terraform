@@ -26,7 +26,7 @@ resource "aws_instance" "mysql" {
   instance_type = var.instance_type
   vpc_security_group_ids = var.security_groups
   tags = {
-    Nmae = "mysql"
+    Name = "mysql"
   }
 }
 #
